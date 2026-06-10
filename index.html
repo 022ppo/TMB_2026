@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>몽블랑 트레킹 & 스위스 여행 일정표</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --tmb-color: #27ae60;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Apple SD Gothic Neo';
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0; font-size: 24px; }
+        header p { margin: 5px 0 0 0; opacity: 0.8; font-size: 14px; }
+        
+        .day-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--tmb-color);
+        }
+        .day-card.special { border-left-color: #3498db; }
+        .day-card.rest { border-left-color: #f1c40f; }
+        .day-card.swiss { border-left-color: var(--accent-color); }
+        
+        .day-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .date-tag { font-size: 14px; color: #7f8c8d; }
+        
+        .schedule-item {
+            display: flex;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        .time {
+            width: 80px;
+            font-weight: bold;
+            color: #34495e;
+            flex-shrink: 0;
+        }
+        .content { flex-grow: 1; }
+        
+        .meta-info {
+            background-color: #f1f2f6;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+        .meta-info strong { color: #2980b9; }
+
+        .notice-box {
+            background-color: #fff5f5;
+            border: 1px solid #feb2b2;
+            color: #c53030;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        .notice-box strong { color: #9b2c2c; }
+
+        .info-box {
+            background-color: #e8f4fd;
+            border: 1px solid #bee3f8;
+            color: #2b6cb0;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        .info-box strong { color: #2b6cb0; }
+        
+        .general-tips {
+            background-color: #edf2f7;
+            border: 1px solid #cbd5e0;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        .general-tips h3 { margin-top: 0; color: #2d3748; }
+        .general-tips ul { padding-left: 20px; margin: 0; font-size: 14px; }
+        .general-tips li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🏔️ 몽블랑 트레킹 & 스위스 힐링 여행</h1>
+        <p>2026년 7월 4일 ~ 7월 12일</p>
+    </header>
+
+    <div class="day-card special">
+        <div class="day-title">
+            <span>7/4 (토) #샤모니 도착 및 장비 점검</span>
+            <span class="date-tag">Day 1</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">09:00</div>
+            <div class="content">제네바 도착</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">12:15</div>
+            <div class="content">샤모니행 버스 13:55 도착</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">오후/저녁</div>
+            <div class="content">샤모니(Chamonix) 숙소 체크인, 내일 새벽 첫차 탑승을 위한 컨디션 조절 및 장비 최종 점검.</div>
+
+        </div>
+    </div>
+
+    <div class="day-card special">
+        <div class="day-title">
+            <span>7/5 (일) # 에귀디미디 전망대 & 이탈리아 쿠르마예르 국경 이동</span>
+            <span class="date-tag">Day 2</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">06:50</div>
+            <div class="content">샤모니(Chamonix)에서 에귀디미디(Aiguille du Midi 3,777m)행 케이블카 탑승 (소요시간 약 30분, 플랑 드 레귀유(Plan de L'aiguille) 환승)</div>
+        </div>	
+        <div class="schedule-item">
+            <div class="time">07:20</div>
+            <div class="content">에귀디미디(Aiguille du Midi) 도착 및 전망 조망</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">08:30 전</div>
+            <div class="content">엘브로네(Helbronner)행 케이블카 -텔레카빈 파노라믹 몽블랑(Télécabine Panoramic Mont-Blanc) 탑승. 30~35분 소요 (★42.5유로 별도)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">09:30 전</div>
+            <div class="content">스카이웨이 몬테 비안코(Skyway Monte Bianco) 탑승. 푼타 엘브로네(Helbronner 3,466m ) → 파빌론 뒤 몽프레티 (Pavillon Du Mont-Frety 2,173m) 환승 → 엔트레브(Entreves 1,300m) 도착</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">11:00</div>
+            <div class="content">쿠르마예르 성 판탈네오네 성당 미사</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">미사 이후~</div>
+            <div class="content">이탈리아 쿠르마예르(Courmayeur 1,244m) 마을 둘러보기 및 점심 식사</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">13:00</div>
+            <div class="content">엔트레브(Entreves)에서 다시 엘브로네(Helbronner)행 복귀 케이블카 탑승해야 함 (엘브로네(Helbronner) 15:30 발 / 16:30 최종 막차)</div>
+        </div>
+        <div class="meta-info">
+            🏃‍♂️ <strong>예상 이동:</strong> 케이블카 총 이동 약 2시간 / 쿠르마예르(Courmayeur) 마을 도보 관광 약 3km<br>
+            ⏱️ <strong>시간 관리:</strong> 이탈리아 쪽 복귀 케이블카 막차(16:30)를 놓치지 않도록 타임라인 엄수!
+        </div>
+        <div class="info-box">
+            <strong>💡 에귀디미디행 케이블카:</strong><br>
+            샤모니 중심가(1,035m)에서 출발하여 에귀디미디 정상(3,842m)까지 2,800m 이상의 고도차를 단 20분 만에 주파. 운행은 총 두 단계로 구성되어 있음.<br>
+            * <strong>1구간:</strong> 샤모니 ➔ 플랑 드 레귀유(Plan de l'Aiguille, 2,317m)<br>
+            * <strong>2구간:</strong> 플랑 드 레귀유 ➔ 정상(3,777m) 구간은 무려 직선거리 2,867m(수평거리 2,500m)를 <strong>중간 지지 기둥 없이</strong> 단 한 번에 와이어로 연결하는 공학적으로도 매우 어렵고 경이로운 업적이라고 함
+        </div>
+        <div class="notice-box">
+            <strong>⚠️ 필수 유의사항:</strong><br>
+            * 에귀디미디(Aiguille du Midi) 케이블카 사전예약 필수!<br>
+            * 날씨 악화 등으로 케이블카가 미운행할 경우, 쿠르마예르(Courmayeur)에서 <strong>Flix Bus(플릭스버스)</strong>를 이용해 샤모니(Chamonix)로 복귀해야 함.
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-title">
+            <span>7/6 (월) # TMB 본격 시작 (산장 1박)</span>
+            <span class="date-tag">Day 3</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">오전~오후</div>
+            <div class="content">
+                <strong>[트레킹 코스]</strong><br>
+                벨뷔 케이블카(Telepherique de Bellevue) 탑승 ➔ 비오나세 출렁다리(Passerelle de Bionnassay) ➔ 비오나세 빙하 호수(Lac Glaciaire du Glacier de Bionnassay) 정취 감상 ➔ 트리코 고개 ➔ 미아지 산장 (Chalets de Miage)➔ 트윅 산장 ➔ 레콩타민 몽조아(Les Contamines Montjoie) ➔ 피우 산장(Refuge du Fioux) 도착 후 산장 1박
+            </div>
+        </div>
+        <div class="meta-info">
+            🏃‍♂️ <strong>예상 거리:</strong> 약 18 ~ 19 km<br>
+            ⏱️ <strong>예상 소요 시간:</strong> 약 6 ~ 8 시간 (휴식 및 중식 포함)
+        </div>
+        <div class="notice-box">
+            <strong>💡 산장 숙박 팁:</strong> 다인실(도미토리) 이용 시 개인용 침낭 라이너(인너시트)와 세면도구, 수건을 미리 배낭에 챙겨야 해! 산장에서는 데이터가 잘 안 터질 수 있으니 참고하자.
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-title">
+            <span>7/7 (화) # 출렁다리와 빙하호, 그리고 산악열차</span>
+            <span class="date-tag">Day 4.</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">오전~오후</div>
+            <div class="content">
+                <strong>[트레킹 & 투어 코스]</strong><br>
+                피우 산장(Refuge du Fioux) 출발 ➔ 꼴드보자(col de voza)➔ 벨뷔(Bellevue) ➔ 르파예(Le Fayet) ➔ 메를레 자연 야생동물원(Parc de Merlet) 관람
+            </div>
+        </div>
+        <div class="meta-info">
+            🏃‍♂️ <strong>예상 거리:</strong> 도보 약 11 ~ 13 km + 트램웨이 이동 (벨뷔->르파예)<br>
+            ⏱️ <strong>예상 소요 시간:</strong> 도보 산행 약 4~5시간 + 동물원 및 열차 투어 약 3시간
+        </div>
+        <div class="notice-box">
+            <strong>⚠️ 필수 유의사항:</strong> 몽블랑 산악열차(Tramway du Mont Blanc)은 이용객이 많아 사전예약이 필수야!
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-title">
+            <span>7/8 (수) # 락블랑의 반영과 얼음바다 투어</span>
+            <span class="date-tag">Day 5</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">오전</div>
+            <div class="content">브레방(Le Brevent) ➔ 플레제르(La Flegere) ➔ 락블랑(Lac Blanc - 몽블랑 최고의 뷰포인트, 호수에 비친 만년설 감상)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">오후</div>
+            <div class="content">몽땅베르(Montenvers) 이동 ➔ 메르 드 글라스(Mer de Glace - 얼음바다 및 얼음동굴 관람) ➔ 보송 빙하 체어리프트(Les Bossons chairlift) 체험</div>
+        </div>
+        <div class="meta-info">
+            🏃‍♂️ <strong>예상 거리:</strong> 약 9 ~ 11 km (일부 구간 곤돌라/리프트 이용)<br>
+            ⏱️ <strong>예상 소요 시간:</strong> 하이킹 약 4~5시간 + 관광 및 리프트 이동 약 2시간
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-title">
+            <span>7/9 (목) # 발므 고개를 넘어 스위스 국경으로</span>
+            <span class="date-tag">Day 6</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">오전~오후</div>
+            <div class="content">
+                <strong>[트레킹 코스]</strong><br>
+                르투르(Le Tour) 출발 ➔ 발므 고개(Col de Balme - 프랑스와 스위스 국경지대) ➔ 발로신(Vallorcine) 하산
+            </div>
+        </div>
+        <div class="meta-info">
+            🏃‍♂️ <strong>예상 거리:</strong> 약 11 km<br>
+            ⏱️ <strong>예상 소요 시간:</strong> 약 5 시간 (오르막 경사 있음)
+        </div>
+        <div class="notice-box">
+            <strong>💡 추가 안내:</strong> 국경 고개 정상은 바람이 심하고 기온이 급격히 떨어질 수 있으니 방풍 자켓(바람막이)을 꼭 가방 맨 위에 넣어두자!
+        </div>
+    </div>
+
+    <div class="day-card rest">
+        <div class="day-title">
+            <span>7/10 (금) # 땅에서 즐기기 ~ 샤모니 다운타운 휴식</span>
+            <span class="date-tag">Day 7</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">하루 종일</div>
+            <div class="content">산행 피로 풀기! 샤모니(Chamonix) 시내 맛집 탐방, 카페 투어, 기념품 쇼핑 및 내일 스위스 몽트뢰 이동 준비.</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">08:55 </div>
+            <div class="content">(백업- 7/5 날씨가 안 좋을 경우) 에귀디미디(Aiguille du Midi)행 케이블카 탑승, 전망 조망</div>
+        </div>
+        <div class="meta-info">
+            🏃‍♂️ <strong>예상 이동:</strong> 완전한 휴식 (도보 시내 산책 2~3km)<br>
+            ⏱️ <strong>힐링 타임:</strong> 선배 트레커들이 추천하는 샤모니(Chamonix) 현지 퐁듀 맛집이나 수제 맥주집을 방문해봐도 좋아!
+        </div>
+    </div>
+
+    <div class="day-card swiss">
+        <div class="day-title" style="color: #c0392b;">
+            <span>7/11 (토) # 스위스 국경 이동 및 라보 와이너리 투어</span>
+            <span class="date-tag">Day 8</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">07:28</div>
+            <div class="content">
+                &nbsp;&nbsp;<strong>[샤모니~몽트뢰 by 기차]</strong> <br>&nbsp;&nbsp;07:28 샤모니(Chamonix) ➔ 08:01 벨로신(Vallorcine) 도착 (환승) ➔ 08:13 벨로신 출발 ➔ 09:17 마르티니(Martigny) 도착 (환승) ➔ 09:17 마르티니 출발 ➔ 09:48 몽트뢰(Montreux) 도착
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">13:20</div>
+            <div class="content">
+               &nbsp;&nbsp;<strong>[라보 포도밭]</strong> 13:20 유람선 탑승 ➔ 14:15 퓔리(Cully) 도착<br>&nbsp;&nbsp;라보(Lavaux) 포도밭 하이킹 ➔ 투르 드 구르즈(Tour de Gourze) <br>&nbsp;&nbsp;➔ 식사@Restaurant La Tour de Gourze( Chasselas, Pinot 
+Noir, Gamay, Garanoir, Gamaret) <br>&nbsp;&nbsp;➔ 에페스(Epesses) / 리바(Rivaz) ➔ 몽트뢰(via Vevey ?)
+           </div>
+        </div>
+    </div>
+
+    <div class="day-card swiss">
+        <div class="day-title" style="color: #c0392b;">
+            <span>7/12 (일) #  레만호 힐링 및 귀국</span>
+            <span class="date-tag">Day 9</span>
+        </div>
+        <div class="schedule-item">
+            <div class="time">10:15</div>
+            <div class="content">몽트뢰 레판토의성모성당 미사</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">미사 이후~</div>
+            <div class="content">레만호(Lac Leman) 수영 & 시옹성(Chateau de Chillon) 관광</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">14:08</div>
+            <div class="content">몽트뢰 역에서 기차 탑승 (★진행 방향 왼쪽 자리가 레만호 뷰 명당!)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">15:30</div>
+            <div class="content">제네바 공항(Geneva Airport) 도착 후 귀국 수속 및 비행기 탑승</div>
+        </div>
+    </div>
+
+    <div class="general-tips">
+        <h3>📢 최종 체크리스트</h3>
+        <ul>
+            <li><strong>예약 확인권:</strong> 에귀디미디(Aiguille du Midi) 케이블카(7/5), 몽블랑 산악열차(Tramway du Mont Blanc)(7/7), CGN 유람선(7/11), 제네바(Geneva)행 기차(7/12) 바우처 폰에 저장하기!</li>
+            <li><strong>결제 수단:</strong> 산장이나 프랑스/이탈리아 시골 지역을 위해 유로(EUR) 현금 소액 준비, 스위스 구간을 위해 스위스 프랑(CHF) 또는 트래블카드를 준비해줘.</li>
+            <li><strong>안전 산행:</strong> 매일 아침 출발 전 'Chamonix Meteo(샤모니 메테오)' 앱으로 날씨와 실시간 기상 통제 여부를 체크하는 것 잊지 말자!</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
