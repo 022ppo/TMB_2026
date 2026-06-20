@@ -73,6 +73,36 @@
             flex-shrink: 0;
         }
         .content { flex-grow: 1; }
+
+        /* ── 이동수단 화살표 ── */
+        .transport-arrow {
+            display: flex;
+            align-items: center;
+            margin: 2px 0 2px 0;
+            padding-left: 80px; /* time 열 너비만큼 들여쓰기 */
+        }
+        .transport-label {
+            font-size: 11px;
+            color: #888;
+            white-space: nowrap;
+            margin-right: 4px;
+            font-style: italic;
+        }
+        .arrow-shaft {
+            flex: 0 0 40px;
+            height: 1px;
+            background: #bbb;
+            position: relative;
+        }
+        .arrow-shaft::after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            top: -4px;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 6px solid #bbb;
+        }
         
         .meta-info {
             background-color: #f1f2f6;
@@ -125,6 +155,7 @@
         <p>2026년 7월 4일 ~ 7월 12일</p>
     </header>
     
+    <!-- ── DAY 1 ── -->
     <div class="day-card special">
         <div class="day-title">
             <span>7/4 (토) #샤모니 도착 및 장비 점검</span>
@@ -134,9 +165,17 @@
             <div class="time">09:00</div>
             <div class="content">제네바 도착</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚌 버스</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">12:15</div>
             <div class="content">샤모니행 버스 13:55 도착</div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚶 도보</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">오후/저녁</div>
@@ -150,6 +189,7 @@
         </div>
     </div>
 
+    <!-- ── DAY 2 ── -->
     <div class="day-card special">
         <div class="day-title">
             <span>7/5 (일) # 에귀디미디 전망대 & 이탈리아 쿠르마예르 국경 이동 (5시간)</span>
@@ -159,45 +199,89 @@
             <div class="time">06:30</div>
             <div class="content">무인발권기에서 배지 수령 </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚡 케이블카 (샤모니 → 플랑 드 레귀유 환승)</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">06:50</div>
             <div class="content">샤모니(Chamonix)에서 에귀디미디(Aiguille du Midi 3,777m)행 케이블카 탑승 (30분, 플랑 드 레귀유(Plan de L'aiguille) 환승)</div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚡 케이블카</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">07:20</div>
             <div class="content">에귀디미디(Aiguille du Midi) 도착 및 전망 조망</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚠 텔레카빈 파노라믹 몽블랑 (★42.5유로 별도)</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">09:00</div>
             <div class="content">에귀디미디 발 → 엘브로네(Helbronner)행 텔레카빈 파노라믹 몽블랑(Télécabine Panoramic Mont-Blanc) 케이블카 탑승. 30~35분 소요 (★42.5유로 별도)</div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚡 스카이웨이 몬테 비안코 (Pavillon 환승)</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">10:00~<br>10:30</div>
             <div class="content">엘브로네 발 → 엔트레브(Entreves 3,466m )행 스카이웨이 몬테 비안코(Skyway Monte Bianco) 탑승 → 파빌론 뒤 몽프레티 (Pavillon Du Mont-Frety 2,173m) 환승 → 엔트레브(Entreves 1,300m) 도착</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚌 블루 셔틀 (5분)</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">10:40</div>
             <div class="content">Piazzale Monte Bianco 행 블루 셔틀 탑승 (5분) </div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚶 도보</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">11:00</div>
             <div class="content">쿠르마예르(Courmayeur 1,244m) 성 판탈네오네 성당 (Chiesa parrocchiale di S. Pantaleone) 미사</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🍽️ 식사</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">12:00</div>
             <div class="content">즐거운 식사 시간~~♪</div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚌 셔틀 → la visaille 하차</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">13:15~<br>or 14:15~</div>
             <div class="content">Piazzale Monte Bianco발 → la visaille 하차 → 콤발호수(Lago di Combal, 완만한 오르막 1시간) → 엘리자베타산장(Rifugio Elisabetta) → 콤발호수 → la visaille</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🥾 트레킹 복귀</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">17:40~<br>or 18:40~</div>
             <div class="content">셔틀타러 복귀 @ la visaille  </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚌 셔틀</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">19:05~</div>
             <div class="content">쿠르마예르 복귀 & 저녁 식사 </div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚌 FlixBus</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">20:05</div>
@@ -225,6 +309,7 @@
         </div>
     </div>
 
+    <!-- ── DAY 3 ── -->
     <div class="day-card">
         <div class="day-title">
             <span>7/6 (월) # TMB 본격 시작 & 산장 1박 (6시간)</span>
@@ -236,11 +321,19 @@
                 Chamonix Sud 버스 탑승 (벨뷔 케이블카 타러 gogo !) ➔ Les Houches Bellevue 케이블카 (Telepherique de Bellevue)역 도착
             </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚡 Telepherique de Bellevue 케이블카</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">08:00</div>
             <div class="content">
                 Les Houches Bellevue 케이블카 (Telepherique de Bellevue) 탑승 ➔ 비오나세 출렁다리(Passerelle de Bionnassay) ➔ 비오나세 빙하 호수(Lac Glaciaire du Glacier de Bionnassay) ➔ 트리코 고개 ➔ 미아지 산장 (Chalets de Miage)➔ 트윅 산장 ➔ 레콩타민 몽조아(Les Contamines Montjoie)
             </div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🥾 트레킹</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">14:00</div>
@@ -248,17 +341,29 @@
                 레콩타민 몽조아(Les Contamines Montjoie) 도착
             </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚌 버스 (30분)</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">15:10~<br>15:40</div>
             <div class="content">
                 레콩타민 Chef-Lieu 버스 탑승 ➔ 르파예(Le Fayet) 도착 (30분)
             </div>
-        </div>    
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚞 Tramway du Mont Blanc</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">16:00~<br>16:42</div>
             <div class="content">
                 르파예 출발 (by TramwayMontBlanc) ➔ 보자고개(Col de voza) 도착
             </div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🥾 도보</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">16:42~<br>17:00~</div>
@@ -284,6 +389,7 @@
         </div>
     </div>
 
+    <!-- ── DAY 4 ── -->
     <div class="day-card">
         <div class="day-title">
             <span>7/7 (화) # 피유 산장에서 하산 (3시간) </span>
@@ -293,6 +399,10 @@
             <div class="time">10:00~<br>13:00</div>
             <div class="content">
                 피유 산장(Refuge du Fioux) 출발 ➔ Col de Voza ➔ 비오나세호 전망대(Glacier de Bionnassay viewpoint) 도착</div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚞 Tramway du Mont Blanc → 🚂 TER 열차 (1회 무료)</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">14:13~<br>17:00</div>
@@ -315,6 +425,7 @@
         </div>
     </div>
 
+    <!-- ── DAY 5 ── -->
     <div class="day-card">
         <div class="day-title">
             <span>7/8 (수) # 락블랑 (5시간)</span>
@@ -324,9 +435,17 @@
             <div class="time">09:00~<br>10:00</div>
             <div class="content">샤모니 발 벨뷔 케이블카 탑승 ➔ 플랑프라 케이블카 정상역 (Telecabine Planpraz(Gare Amont)) ➔ Telepherique du Le Brevent(환승) ➔ Le Brevent도착 </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🥾 트레킹</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">10:00~<br>16:00</div>
             <div class="content">브레방(Le Brevent) ➔ 플레제르(La Flegere) ➔ 락블랑(Lac Blanc) ➔ 플레제르(La Flegere) 도착 </div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚡 케이블카 (Flégère 상부역)</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">16:00~</div>
@@ -345,9 +464,9 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 아이벡스(산양) 출몰 가능<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 구간 대부분 햇빛 노출, 모자 필수
         </div>
-    
     </div>
 
+    <!-- ── DAY 6 ── -->
     <div class="day-card">
         <div class="day-title">
             <span>7/9 (목) # 발므 고개 & 동물원 (7시간)</span>
@@ -358,15 +477,27 @@
             <div class="content">
                 Chamonix sud 버스 2번 탑승 ➔ 르투르(Le Tour)하차(40분)</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚠 Télécabine de Charamillon 곤돌라 → 🪑 Autannes 체어리프트</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">09:02~</div>
             <div class="content">
                 르투르 발 Télécabine de Charamillon (곤돌라) 탑승 ➔ 샤라미옹(Charamillon)에 도착해서 오탄 체어리프트로 환승(Autannes Chairlift) ➔ 발므 스키장 (Domaine de Balme) 도착</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🥾 트레킹</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">~14:00</div>
             <div class="content">
                 발므 스키장 출발 ➔ 발므 고개(Col de Balme) ➔ 발로르신(Vallorcine)</div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚂 TER 열차 (1시간) → 🚶 도보 80분</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">14:10~<br>or 14:40~</div>
@@ -390,6 +521,7 @@
         </div>
     </div>
 
+    <!-- ── DAY 7 ── -->
     <div class="day-card rest">
         <div class="day-title">
             <span>7/10 (금) # Mer de Glace & Glacier des Bossons (2시간)</span>
@@ -399,13 +531,25 @@
             <div class="time">08:55</div>
             <div class="content"><strong>[1안]</strong>샤모니(Chamonix)에서 에귀디미디(Aiguille du Midi)행 케이블카 탑승 ➔ 플랑 드 레귀유(Plan de L'aiguille, 30분)하차 ➔ Mer de Glace 트레킹 (100분, Grand Balcon Nord Trail로 불리는 아름다운 길)</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚂 Montenvers 열차 [2안]</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">09:00</div>
             <div class="content"><strong>[2안]</strong>샤모니 발 Montenvers Mer de Glace행 기차 탑승 ➔ 메르 드 글라스(Mer de Glace) 전망 </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚂 TER 열차 또는 🚌 버스</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">오후 </div>
             <div class="content">샤모니에서 TER기차 또는 버스 탑승 ➔ Bossons 정류장 </div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🪑 Télésiège Glacier des Bossons 체어리프트</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">15:00~<br>18:00 </div>
@@ -424,6 +568,7 @@
         </div>
     </div>
 
+    <!-- ── DAY 8 ── -->
     <div class="day-card swiss">
         <div class="day-title" style="color: #c0392b;">
             <span>7/11 (토) # 스위스 국경 이동 및 라보 와이너리 투어 (3시간)</span>
@@ -435,6 +580,10 @@
                 <strong>[샤모니~몽트뢰 by 기차]</strong> SBB 예매 or 현장 구입 <br>샤모니(Chamonix, 07:28) ➔ 벨로신(Vallorcine, PI.B, 08:13) ➔ 마흐띠느(Martigny, PI.41-PI.1, 09:17발) ➔ 몽트뢰(Montreux, 09:48착) ➔ Villa Toscane Montreux (도보10분) 
             </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚂 SBB 기차 (몽트뢰 → Cully)</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">10:30</div>
             <div class="content">
@@ -442,11 +591,19 @@
 Noir, Gamay, Garanoir, Gamaret) ➔ 에페스(Epesses, 도보 1시간) 
            </div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚂 기차 (Epesses → Vevey 환승 → 몽트뢰)</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">15:46</div>
             <div class="content">
                에페스 역에서 기차 탑승 ➔ 뷔베이 환승 (Vevey, PI.4-PI.2 16:03착) ➔ 몽트뢰 도착(16:09~16:15)
            </div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚶 도보</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">17시 이후~</div>
@@ -467,6 +624,7 @@ Noir, Gamay, Garanoir, Gamaret) ➔ 에페스(Epesses, 도보 1시간)
         </div>
     </div>
 
+    <!-- ── DAY 9 ── -->
     <div class="day-card swiss">
         <div class="day-title" style="color: #c0392b;">
             <span>7/12 (일) #  레만호 힐링 및 귀국</span>
@@ -476,13 +634,25 @@ Noir, Gamay, Garanoir, Gamaret) ➔ 에페스(Epesses, 도보 1시간)
             <div class="time">10:15</div>
             <div class="content">몽트뢰 레판토의성모성당 미사</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚶 도보 또는 🚌 버스</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">미사 이후~</div>
             <div class="content">레만호(Lac Leman) 수영 & 시옹성(Chateau de Chillon) 관광(호텔에서 버스 또는 도보)</div>
         </div>
+        <div class="transport-arrow">
+            <span class="transport-label">🚂 기차 (진행 방향 왼쪽 자리 = 레만호 뷰!)</span>
+            <div class="arrow-shaft"></div>
+        </div>
         <div class="schedule-item">
             <div class="time">14:08</div>
             <div class="content">몽트뢰 역에서 기차 탑승 (★진행 방향 왼쪽 자리가 레만호 뷰 명당!)</div>
+        </div>
+        <div class="transport-arrow">
+            <span class="transport-label">✈️ 귀국</span>
+            <div class="arrow-shaft"></div>
         </div>
         <div class="schedule-item">
             <div class="time">15:30</div>
